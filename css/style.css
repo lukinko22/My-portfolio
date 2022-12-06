@@ -21,3 +21,18 @@ h6 {
 p {
   margin: 0;
 }
+.avatar{
+  width: 50px;
+  border-radius:50%;
+  overflow:hidden
+}
+.avatar img{
+  width:100%;
+}
+header {
+  display:flex;
+  justify-content: space-between;
+}
+.me {
+  display:flex;
+}
