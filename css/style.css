@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  background-color: lightblue;
 }
 
 body {
@@ -9,8 +10,8 @@ body {
   line-height: 1.5;
 }
 
-h1,
-h2,
+h1
+h2
 h3,
 h4,
 h5,
@@ -32,7 +33,78 @@ p {
 header {
   display:flex;
   justify-content: space-between;
+  padding-top: 15px;
+  margin-right: 20px;
 }
 .me {
   display:flex;
+}
+header a{
+  display: inline-block;
+  margin-left: 25px;
+}
+.life img{
+  max-height: 200px;
+  max-width: 200px;
+}
+.profile_picture img{
+  max-height: 200px;
+  max-width: 200px;
+}
+.amazon img{
+max-height: 200px;
+max-width: 200px;
+}
+.project1 img{
+  max-height: 200px;
+  max-width: 200px;
+}
+.project2 img{
+  max-height: 200px;
+  max-width: 200px;
+}
+.project3 img{
+  max-height: 200px;
+  max-width: 200px;
+}
+.page-section h2{
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+.page-wrapper{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+  "About_me About_me"
+  "My_work Portfolio"
+  ;
+
+}
+#About_me{
+  grid-area:About_me;
+}
+#My-work{
+  grid-area:My_work;
+}
+#Portfolio{
+  grid-area:Portfolio;
+}
+#Portfolio{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+  "project1 project1"
+  "project2 project3"
+  ;
+}
+.project1{
+  grid-area: project1;
+}
+.project2{
+  grid-area: project2;
+}
+.project3{
+  grid-area:project3
 }
